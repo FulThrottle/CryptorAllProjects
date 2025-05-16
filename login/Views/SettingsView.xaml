@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="CryptorLogin.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="Transparent">
+
+    <Grid>
+        <StackPanel Margin="15" VerticalAlignment="Top" HorizontalAlignment="Left">
+
+            <!-- Налаштування теми -->
+            <TextBlock Text="Тема застосунку" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <ComboBox x:Name="ThemeSelector" Width="200" Margin="0,0,0,20" SelectionChanged="ThemeSelector_SelectionChanged">
+                <ComboBoxItem Content="🌙 Темна" Tag="Dark" IsSelected="True"/>
+                <ComboBoxItem Content="☀️ Світла" Tag="Light"/>
+            </ComboBox>
+
+            <!-- Налаштування мови -->
+            <TextBlock Text="Мова інтерфейсу" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <ComboBox x:Name="LanguageSelector" Width="200" SelectionChanged="LanguageSelector_SelectionChanged">
+                <ComboBoxItem Content="🇺🇦 Українська" Tag="uk-UA" IsSelected="True"/>
+                <ComboBoxItem Content="🇺🇸 English" Tag="en-US"/>
+            </ComboBox>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

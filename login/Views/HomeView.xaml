@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="CryptorLogin.Views.HomeView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="Transparent">
+
+    <StackPanel Margin="20">
+
+        <!-- Опис застосунку -->
+        <TextBlock Text="Crypt" Foreground="White" FontSize="32" FontWeight="Bold"/>
+        <TextBlock Text="Безпечний перегляд шифрування та дешифрування файлів. Оберіть дію:"
+                   Foreground="Gray" FontSize="16" Margin="0,10,0,20"/>
+
+        <!-- Контейнер для кнопок -->
+        <WrapPanel HorizontalAlignment="Center" Margin="10">
+
+            <!-- Кнопка "Шифрувати файл" -->
+            <StackPanel Margin="10" HorizontalAlignment="Center">
+                <Button Click="Encrypt_Click" Style="{StaticResource IconButton}">
+                    <Image Source="/Resources/decrypt.png" Width="50" Height="50"/>
+                </Button>
+                <TextBlock Text="Шифрування" Foreground="White" FontSize="14" 
+                           HorizontalAlignment="Center" Margin="5"/>
+            </StackPanel>
+
+            <!-- Кнопка "Дешифрувати файл" -->
+            <StackPanel Margin="10" HorizontalAlignment="Center">
+                <Button Click="Decrypt_Click" Style="{StaticResource IconButton}">
+                    <Image Source="/Resources/encrypt.png" Width="50" Height="50" Stretch="Fill"/>
+                </Button>
+                <TextBlock Text="Дешифрування" Foreground="White" FontSize="14" 
+                           HorizontalAlignment="Center" Margin="5"/>
+            </StackPanel>
+
+            <!-- Кнопка "Налаштування" -->
+            <StackPanel Margin="10" HorizontalAlignment="Center">
+                <Button Click="Settings_Click" Style="{StaticResource IconButton}">
+                    <Image Source="/Resources/settings.png" Width="50" Height="50"/>
+                </Button>
+                <TextBlock Text="Налаштування" Foreground="White" FontSize="14" 
+                           HorizontalAlignment="Center" Margin="5"/>
+            </StackPanel>
+
+            <!-- Кнопка "Документи" -->
+            <StackPanel Margin="10" HorizontalAlignment="Center">
+                <Button Click="Documents_Click" Style="{StaticResource IconButton}">
+                    <Image Source="/Resources/document.png" Width="60" Height="76" RenderTransformOrigin="0.486,0.397"/>
+                </Button>
+                <TextBlock Text="Перегляд документів" Foreground="White" FontSize="14" 
+                           HorizontalAlignment="Center" Margin="5"/>
+            </StackPanel>
+
+        </WrapPanel>
+
+    </StackPanel>
+</UserControl>

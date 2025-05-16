@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+	  <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+	  <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Resources\close.png" />
+    <Content Remove="Resources\decrypt.png" />
+    <Content Remove="Resources\document.png" />
+    <Content Remove="Resources\documents.png" />
+    <Content Remove="Resources\encrypt.png" />
+    <Content Remove="Resources\home.png" />
+    <Content Remove="Resources\max.png" />
+    <Content Remove="Resources\min.png" />
+    <Content Remove="Resources\settings.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="libs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.DocIO.Wpf" Version="28.2.11" />
+    <PackageReference Include="Syncfusion.PdfViewer.WPF" Version="28.2.11" />
+    <PackageReference Include="Syncfusion.SfRichTextBoxAdv.WPF" Version="28.2.5" />
+    <PackageReference Include="Syncfusion.SfSpreadsheet.WPF" Version="28.1.41" />
+    <PackageReference Include="Syncfusion.XlsIO.Wpf" Version="28.2.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CryptorWinUIDLL\CryptorWinUIDLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\close.png" />
+    <Resource Include="Resources\decrypt.png" />
+    <Resource Include="Resources\document.png" />
+    <Resource Include="Resources\documents.png" />
+    <Resource Include="Resources\encrypt.png" />
+    <Resource Include="Resources\home.png" />
+    <Resource Include="Resources\max.png" />
+    <Resource Include="Resources\min.png" />
+    <Resource Include="Resources\settings.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
