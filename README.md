@@ -56,3 +56,6 @@ CryptorAllProjects/
 │ └── CryptorLogin.sln
 └── CryptorWinUIDLL/ # MAUI / shared library component
 └── CryptorWinUIDLL.sln
+## 📚 Keywords (for discoverability)
+
+AES file encryption, offline file security, C# encryption tool, WPF secure app, Windows Hello login, encrypted document viewer, PDF encryption, DOCX protection, .NET 8 privacy app, Cryptomator alternative, secure viewer, no-cloud encryption
